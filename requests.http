@@ -1,1 +1,26 @@
-# Separate each request with a new line, then ###, then a new line.
+@baseURL = https://expert-yodel-vwq6prj4pxhwrvp-8000.app.github.dev
+@user_id = 555555
+@book_isbn = 9780452284234
+
+
+# https://www.linkedin.com/learning/learning-rest-apis/articles/exploring-response-headers-29736348?autoSkip=true&resume=false
+###
+GET {{baseURL}}/users
+
+# ###
+# GET {{baseURL}}/users/{{user_id}}
+
+# GET {{baseURL}}/books
+
+# GET {{baseURL}}/books/{{book_isbn}}
+
+# POST request 
+# POST {{baseURL}}/users
+# Content-Type: application/json
+
+# {
+#   "name": "Header Test",
+#   "email": "headers@example.com",
+#   "address": "456 Header Ave",
+#   "phoneNumber": "5559998877"
+# }
